@@ -1,0 +1,2 @@
+# wplaravel.dev
+wplaravel.dev
