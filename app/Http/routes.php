@@ -19,3 +19,8 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('school', 'SchoolController@index');
+Route::get('/hello', function () {
+    return 'Hello World';
+});
