@@ -45,6 +45,8 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 | and wonderful application we have prepared for them.
 |
 */
+define('WP_USE_THEMES', false);
+require __DIR__.'/../wordpress/wp-blog-header.php';
 
 $kernel = $app->make('Illuminate\Contracts\Http\Kernel');
 
