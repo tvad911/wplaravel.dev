@@ -11,16 +11,27 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+Route::get('/', ['as' => 'homepage', 'uses' => 'SchoolController@home']);
+Route::get('school', [
+    'as' => 'school', 'uses' => 'SchoolController@index'
 ]);
 
-Route::get('school', 'SchoolController@index');
-Route::get('/hello', function () {
-    return 'Hello World';
-});
+Route::get('about', [
+    'as' => 'about', 'uses' => 'SchoolController@about'
+]);
+
+Route::get('meta', [
+    'as' => 'meta', 'uses' => 'SchoolController@meta'
+]);
+
+Route::get('page', [
+    'as' => 'page', 'uses' => 'SchoolController@page'
+]);
+
+Route::get('home', [
+    'as' => 'homepage', 'uses' => 'SchoolController@home'
+]);
+
+Route::get('post/{id}', [
+    'as' => 'post.id', 'uses' => 'PostController@show'
+]);

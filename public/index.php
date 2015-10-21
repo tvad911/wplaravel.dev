@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
@@ -17,8 +18,8 @@
 | loading any of our classes later on. It feels nice to relax.
 |
 */
-require __DIR__.'/../bootstrap/autoload.php';
 
+require __DIR__.'/../bootstrap/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -45,13 +46,22 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 | and wonderful application we have prepared for them.
 |
 */
+/*
+|--------------------------------------------------------------------------
+| Wordpress
+|--------------------------------------------------------------------------
+|
+| Integrate Wordpress with Laravel core
+|
+*/
+
 define('WP_USE_THEMES', false);
 require __DIR__.'/../wordpress/wp-blog-header.php';
 
-$kernel = $app->make('Illuminate\Contracts\Http\Kernel');
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
 $response = $kernel->handle(
-	$request = Illuminate\Http\Request::capture()
+    $request = Illuminate\Http\Request::capture()
 );
 
 $response->send();
