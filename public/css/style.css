@@ -1,5 +1,5 @@
 /* ----------------------------------------------------
-  
+
 	File Name: style.css
 	Template Name: Kalista
 	Created By: Template Visual
@@ -19,19 +19,19 @@
 	12. COLORS
 	13. RESPONSIVE
 	14. OTHERS
-	
-------------------------------------------------------- */  
+
+------------------------------------------------------- */
 
 /* ----------------------------------------------------
-	IMPORT	
-------------------------------------------------------- */  
+	IMPORT
+------------------------------------------------------- */
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900italic,900);
 @import url(http://fonts.googleapis.com/css?family=Bubblegum+Sans);
 
 /* ----------------------------------------------------
-	SKELETON	
-------------------------------------------------------- */  
+	SKELETON
+------------------------------------------------------- */
 
 	body {
 		background: #f7f8fa;
@@ -41,7 +41,7 @@
 		letter-spacing: 0.06em;
 		padding:0;
 		font-family: 'Source Sans Pro', sans-serif;
-		background: url(images/bg.jpg) no-repeat center center fixed; 
+		background: url(/../images/bg.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -50,39 +50,39 @@
 	.fullwidth #wrapper {
 		background: #ffffff;
 	}
-	h1,h2,h3,h4,h5,h6{ 
+	h1,h2,h3,h4,h5,h6{
 		letter-spacing:0px;
 	    font-family: "Bubblegum Sans",cursive;
 		font-weight:normal;
 		position: relative;
-		padding: 0 0 10px 0;         
+		padding: 0 0 10px 0;
 		font-weight:normal;
 		line-height:1.8 !important;
 		color:#494949;
 	}
 	h1{
-		font-size: 38px; 
+		font-size: 38px;
 	}
 	h2{
-		font-size: 24px; 	
+		font-size: 24px;
 	}
 	h3{
-		font-size: 18px; 
+		font-size: 18px;
 	}
 	h4{
-		font-size: 16px; 		
+		font-size: 16px;
 	}
 	h5{
-		font-size: 14px; 		
+		font-size: 14px;
 	}
 	h6{
-		font-size: 14px;  	
+		font-size: 14px;
 	}
 	a {
 		color:#494949;
 	}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
-		text-decoration:none !important; 
+		text-decoration:none !important;
 	}
 	.aligncenter{
 		display:block;
@@ -152,13 +152,13 @@
 		background: #f84b4a; /* Firefox */
 		color:#fff;
 	}
-	blockquote {		 
+	blockquote {
 		font-size:16px;
 		line-height: 32px;
 		font-family: 'Droid Serif', Georgia, "Times New Roman", serif;
 		font-weight:normal;
-		font-style:italic;	   
-		position:relative;  
+		font-style:italic;
+		position:relative;
 		width:auto;
 	}
 	blockquote small {
@@ -186,10 +186,10 @@
 		width:auto;
 		border-collapse: separate;
 		border-spacing: inherit;
-		margin:0 0 20px 0; 
+		margin:0 0 20px 0;
 		padding:0;
 		border-right:1px solid #F5F5F5;
-		border-top:1px solid #F5F5F5;        
+		border-top:1px solid #F5F5F5;
 	}
 	table caption strong{
 		text-align:left;
@@ -204,17 +204,17 @@
 		font-style: italic;
 	}
 	table th {
-		padding: 14px; 
+		padding: 14px;
 		font-size: 12px;
-		background:#F5F5F5; 
-		border-left:1px solid #F5F5F5;   
+		background:#F5F5F5;
+		border-left:1px solid #F5F5F5;
 	}
 	table td {
 		padding: 10px;
 		text-align: left;
 		margin:10px;
 		border-bottom:1px solid #F5F5F5;
-		border-left:1px solid #F5F5F5;	        
+		border-left:1px solid #F5F5F5;
 	}
 	.check li:before {
 		content: "\f00c";
@@ -232,7 +232,7 @@
 		margin-bottom:4px;
 	}
 	.check {
-		margin-left:0; 
+		margin-left:0;
 		padding-left:0
 	}
 	#map {
@@ -343,7 +343,7 @@
 	}
 	.ttmenu .navbar-default {
 		border-radius: 0;
-		background:url(images/rainbow.jpg) repeat-x top center #ffffff;
+		background:url(../images/rainbow.jpg) repeat-x top center #ffffff;
 		padding:35px 25px 25px;
 		border:1px solid #eff7fe;
 	}
@@ -466,7 +466,7 @@
 	.ttmenu-content .box li a:hover {
 	    opacity: 0.8
 	}
-	.ttmenu .navbar-default .dropdown-menu, 
+	.ttmenu .navbar-default .dropdown-menu,
 	.ttmenu .navbar-default .dropdown-menu li a {
 		color:#fff;
 	}
@@ -527,9 +527,9 @@
 		overflow: visible !important;
 	}
 	.headerbg {
-	    background: rgba(0, 0, 0, 0) url("images/menu_bg.png") no-repeat scroll 0 0;
+	    background: rgba(0, 0, 0, 0) url("../images/menu_bg.png") no-repeat scroll 0 0;
 	    bottom: 0;
-	    content: url("images/menu_bg.png");
+	    content: url("../images/menu_bg.png");
 	    display: block;
 	    height: 150px;
 	    position: absolute;
@@ -571,7 +571,7 @@
 	}
 	#vertical .navbar-default {
 		padding:0 !important;
-		background:url(images/rainbow2.jpg) repeat-x top center #ffffff;
+		background:url(../images/rainbow2.jpg) repeat-x top center #ffffff;
 		border:0;
 		box-shadow: none;
 	}
@@ -839,7 +839,7 @@
 		padding:30px;
 		background-color: #eff7fe;
 	    border: 1px solid #eff7fe;
-	    box-shadow: 1px 1px 5px 0 #eff7fe;	
+	    box-shadow: 1px 1px 5px 0 #eff7fe;
 	}
 	.modal {
 		position: fixed;
@@ -958,7 +958,7 @@
 	#cart-table thead tr th:first-child {
 		border-left: 0;
 	}
-	#cart-table th, 
+	#cart-table th,
 	#cart-table td {
 		font-size:15px;
 		font-weight: bold;
@@ -974,8 +974,8 @@
 	    vertical-align: middle;
 	}
 
-	#cart-table .media-left, 
-	#cart-table .media-right, 
+	#cart-table .media-left,
+	#cart-table .media-right,
 	#cart-table .media-body {
 		display: inline;
 	}
@@ -1104,7 +1104,7 @@
 	}
 	.page-wrapper {
 		padding:30px;
-		background: #ffffff url("images/rainbow.jpg") repeat-x scroll center bottom;
+		background: #ffffff url("../images/rainbow.jpg") repeat-x scroll center bottom;
 	}
 	.page-wrapper hr {
 		background-color: #fff;
@@ -1188,9 +1188,9 @@
 	.zoom img {
 		width: 100%;
 		display: block;
-		cursor: url(images/cursor.html), auto;
+		cursor: url(../images/cursor.html), auto;
 	}
-	.zoom img::selection { 
+	.zoom img::selection {
 		background-color: transparent;
 	}
 	.shopmeta .pull-left {
@@ -1199,7 +1199,7 @@
 		border-radius: 3px;
 	}
 	.section-title {
-		background:url(images/rainbow2.jpg) repeat-x top center #0080c8 !important;
+		background:url(../images/rainbow2.jpg) repeat-x top center #0080c8 !important;
 	    border-radius: 0;
 	    display: inline-block;
 	    left: 0;
@@ -1389,7 +1389,7 @@
 	}
 	.post-details .pull-right i {
 		padding-right:5px;
-	} 
+	}
 	.post-details .pull-left i {
 		padding-right: 3px;
 	}
@@ -1407,7 +1407,7 @@
 		margin-bottom: 20px;
 	}
 	.blog-wrap {
-		margin:0 0 20px;	
+		margin:0 0 20px;
 	}
 
 	.blog-wrap h2 a {
@@ -1435,7 +1435,7 @@
 		margin-right: 10px;
 		text-align: center;
 	}
-	.blog-wrap .post-content {	
+	.blog-wrap .post-content {
 		padding-left:60px;
 	}
 	.blog-wrap div.post-date span.month {
@@ -1506,7 +1506,7 @@
 	.meta a {
 		margin:0 3px;
 	}
-	
+
 /* ==================================================================
 	WIDGETS
 ================================================================== */
@@ -1557,7 +1557,7 @@
 		position: relative;
 		width: 100%;
 		border-width: 5px;
-		border-image: url("images/rainbow2.jpg") 5 repeat stretch;
+		border-image: url("../images/rainbow2.jpg") 5 repeat stretch;
 	}
 	.newsletter .form-control {
 		height: 40px;
@@ -1893,7 +1893,7 @@
 	a:hover,
 	a:focus,
 	.header-bottom p a {
-		color:#89b124;	
+		color:#89b124;
 	}
 	.pagination li a,
 	.img-rotate .badge,
@@ -1916,8 +1916,8 @@
 	}
 
 /* ----------------------------------------------------
-	RESPONSIVE	
-------------------------------------------------------- */  
+	RESPONSIVE
+------------------------------------------------------- */
 
 @media (max-width: 768px) {
 	.newsletter {
@@ -1934,8 +1934,8 @@
 }
 
 /* ----------------------------------------------------
-	OTHERS	
-------------------------------------------------------- */  
+	OTHERS
+------------------------------------------------------- */
 
 	#loader {
 		overflow-x: hidden;
@@ -1964,11 +1964,11 @@
 	}
 
 /* ----------------------------------------------------
-	NEW STYLE	
-------------------------------------------------------- */  
+	NEW STYLE
+------------------------------------------------------- */
 
 	.fullwidth-topbar {
-		background:url(images/rainbow.jpg) repeat-x top center #0073bb;
+		background:url(../images/rainbow.jpg) repeat-x top center #0073bb;
 	}
 	.fullwidth-topbar .topbar {
 		padding:10px 0;
@@ -2022,7 +2022,7 @@
 	.new-section .owl-controls {
 		right: 0;
 		left: 0;
-		top:auto !important; 
+		top:auto !important;
 		bottom:-15% !important;
 	}
 	.white {
@@ -2065,8 +2065,8 @@
 	}
 
 	.boxedcontainer {
-		max-width: 1170px; 
-		margin:auto; 
+		max-width: 1170px;
+		margin:auto;
 		padding:0px 30px;
 	}
 	.tp-banner-container{
@@ -2129,5 +2129,3 @@
 		border:0 !important;
 		background-color: #ffffff !important;
 	}
-
-

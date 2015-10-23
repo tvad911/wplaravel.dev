@@ -48,33 +48,7 @@ class PostController extends Controller
     public function show($id)
     {
         $post = \Post::find(1);
-        // only all categories and posts connected with it
-        // $cat = \Taxonomy::where('taxonomy', 'category')->with('posts')->get();
-        // $cat->each(function($category) {
-        //     echo $category->name;
-        // });
-        // $cats = \Taxonomy::category()->posts()->all();
-        // dd($post);
-        return view('posts.show',compact('post'));
-        // return view('posts.show',$post);
-        // dd($post);
-        // echo '<pre>';
-        // var_dump($post);
-        // echo '</pre>';
-        // $taxonomy = $post->taxonomies()->first();
-        // echo $taxonomy->taxonomy;
-        //
-        // $cat = \Taxonomy::category()->slug('uncategorized')->posts()->first();
-        // $cat = \Taxonomy::category()->posts()->get();
-        // echo "<pre>"; var_dump($cat); echo "</pre>";
-
-        // only all categories and posts connected with it
-        // $cat = \Taxonomy::where('taxonomy', 'category')->with('posts')->get();
-        // $cat->each(function($category) {
-        //     echo $category->name;
-        // });
-
-        // echo $post->post_title;
+        return view('posts.detail',compact('post'));
     }
 
     /**
@@ -118,9 +92,22 @@ class PostController extends Controller
      */
     public function slug($slug)
     {
-        $post = \Post::type('post')->slug('hello-world')->first();
+        $post = \Post::type('post')->slug($slug)->first();
         $comments = get_approved_comments($post->ID);
+        // $comments_child = $this->arraySort($comments,$comments->comment_parent);
         // dd($comments);
-        return view('posts.show',compact('post','comments'));
+        return view('posts.detail',compact('post','comments'));
+    }
+    /**
+     * [list description]
+     * @return [type] [description]
+     */
+    public function blog()
+    {
+        // $post = \Post::type('post')->status('published');
+        $posts = \Post::type('post')->published()->get();
+
+        // dd($posts);
+        return view('posts.list',compact('posts'));
     }
 }

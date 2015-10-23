@@ -1,4 +1,54 @@
-@include('include.header')
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+
+<!-- Mirrored from templatevisual.com/demo/kalista/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Oct 2015 14:16:39 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kalista - Kids Store e-Commerce HTML5 Template</title>
+
+    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/apple-touch-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/apple-touch-icon-114x114.png') }}" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/carousel.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('rs-plugin/css/settings.css') }}" media="screen" />
+
+    <!-- Custom CSS -->
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="fullwidth">
+
+    <div id="loader">
+        <div class="loader-container">
+            <img src="images/loader.gif" alt="" class="loader-site">
+        </div>
+    </div>
+
 <div id="wrapper">
     <!-- Modal -->
     <div class="modal fade modalexample" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1164,4 +1214,84 @@
     </div><!-- end copy -->
 
     <div class="backtotop"><i class="fa fa-arrow-up"></i> </div>
-@include('include.footer')
+
+</div><!-- end wrapper -->
+
+    <!-- Template core JavaScript's
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/parallax.js"></script>
+    <!-- SLIDER REV -->
+    <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script>
+    jQuery(document).ready(function() {
+        jQuery('.tp-banner').show().revolution(
+            {
+            dottedOverlay:"none",
+            delay:16000,
+            startwidth:1170,
+            startheight:620,
+            hideThumbs:200,
+            thumbWidth:100,
+            thumbHeight:50,
+            thumbAmount:5,
+            navigationType:"none",
+            navigationArrows:"solo",
+            navigationStyle:"preview4",
+            touchenabled:"on",
+            onHoverStop:"on",
+            swipe_velocity: 0.7,
+            swipe_min_touches: 1,
+            swipe_max_touches: 1,
+            drag_block_vertical: false,
+            parallax:"mouse",
+            parallaxBgFreeze:"on",
+            parallaxLevels:[10,7,4,3,2,5,4,3,2,1],
+            parallaxDisableOnMobile:"off",
+            keyboardNavigation:"off",
+            navigationHAlign:"center",
+            navigationVAlign:"bottom",
+            navigationHOffset:0,
+            navigationVOffset:20,
+            soloArrowLeftHalign:"left",
+            soloArrowLeftValign:"center",
+            soloArrowLeftHOffset:20,
+            soloArrowLeftVOffset:0,
+            soloArrowRightHalign:"right",
+            soloArrowRightValign:"center",
+            soloArrowRightHOffset:20,
+            soloArrowRightVOffset:0,
+            shadow:0,
+            fullWidth:"on",
+            fullScreen:"off",
+            spinner:"spinner4",
+            stopLoop:"off",
+            stopAfterLoops:-1,
+            stopAtSlide:-1,
+            shuffle:"off",
+            autoHeight:"off",
+            forceFullWidth:"off",
+            hideThumbsOnMobile:"off",
+            hideNavDelayOnMobile:1500,
+            hideBulletsOnMobile:"off",
+            hideArrowsOnMobile:"off",
+            hideThumbsUnderResolution:0,
+            hideSliderAtLimit:0,
+            hideCaptionAtLimit:0,
+            hideAllCaptionAtLilmit:0,
+            startWithSlide:0,
+            fullScreenOffsetContainer: ""
+            });
+        });
+    </script>
+
+</body>
+
+<!-- Mirrored from templatevisual.com/demo/kalista/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Oct 2015 14:18:39 GMT -->
+</html>

@@ -72,6 +72,7 @@
             });
         });
     </script>
+    @include('include.js')
 
 </body>
 

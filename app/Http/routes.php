@@ -14,3 +14,4 @@
 Route::get('/', ['as' => 'index', 'uses' => 'IndexController@index']);
 Route::get('post/{id}', ['as' => 'post.id', 'uses' => 'PostController@show'])->where('id', '[0-9]+');
 Route::get('post/{slug}', ['as' => 'post.slug', 'uses' => 'PostController@slug'])->where('slug', '[A-Za-z_0-9_-]+');
+Route::get('blog', ['as' => 'post.blog', 'uses' => 'PostController@blog']);
