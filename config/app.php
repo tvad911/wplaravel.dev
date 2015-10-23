@@ -148,6 +148,10 @@ return [
          * Custom Packet
          */
         Barryvdh\Debugbar\ServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
     ],
 
@@ -201,7 +205,9 @@ return [
          * Custom Packet
          */
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-
+        'Flash' => Laracasts\Flash\Flash::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+        'Image' => Intervention\Image\Facades\Image::class,
     ],
 
 ];

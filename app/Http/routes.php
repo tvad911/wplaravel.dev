@@ -11,27 +11,6 @@
 |
 */
 
-Route::get('/', ['as' => 'homepage', 'uses' => 'SchoolController@home']);
-Route::get('school', [
-    'as' => 'school', 'uses' => 'SchoolController@index'
-]);
-
-Route::get('about', [
-    'as' => 'about', 'uses' => 'SchoolController@about'
-]);
-
-Route::get('meta', [
-    'as' => 'meta', 'uses' => 'SchoolController@meta'
-]);
-
-Route::get('page', [
-    'as' => 'page', 'uses' => 'SchoolController@page'
-]);
-
-Route::get('home', [
-    'as' => 'homepage', 'uses' => 'SchoolController@home'
-]);
-
-Route::get('post/{id}', [
-    'as' => 'post.id', 'uses' => 'PostController@show'
-]);
+Route::get('/', ['as' => 'index', 'uses' => 'IndexController@index']);
+Route::get('post/{id}', ['as' => 'post.id', 'uses' => 'PostController@show'])->where('id', '[0-9]+');
+Route::get('post/{slug}', ['as' => 'post.slug', 'uses' => 'PostController@slug'])->where('slug', '[A-Za-z_0-9_-]+');
